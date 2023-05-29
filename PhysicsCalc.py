@@ -168,15 +168,36 @@ def calculate_physics():
 
     elif choice == 7:
         # Calculation for Velocity (V)
-        print("Choose a formula to calculate Velocity (V):")
-        # Add the formulas for Velocity (V) here
-        print("Coming soon!")
+        print("Choose a formula to calculate Velocity (V): ")
+        print("1. V = d / t (Distance / Time)")
+        formula_choice = int(input("Enter the number corresponding to the formula: "))
+        if formula_choice == 1:
+            d = float(input("Enter the distance: "))
+            t = float(input("Enter the time: "))
+            V = d / t 
+            print("Velocity (V) =", V, "m/s")
+
+        else: 
+            print("Invalid Option")
+
+        
 
     elif choice == 8:
         # Calculation for Force (F)
         print("Choose a formula to calculate Force (F):")
-        # Add the formulas for Force (F) here
-        print("Coming soon!")
+        print("1. Force = m * a" "(Mass * Acceleration)")
+        formula_choice = int(input("Enter the number corresponding to the formula: "))
+
+        if formula_choice == 1:
+            m = float(input("What is the mass? "))
+            a = float(input("What is the acceleration? "))
+            f = m * a 
+            print("Force (N) =", f, "newtons")
+
+        else: 
+
+            print("Invalid Option")
+        
 
     elif choice == 9:
         # Calculation for Acceleration (a)
@@ -222,7 +243,7 @@ try:
         print(" ")
         print(" ")
         print(" ")
-        print("The Program will now loop.")
+        print("The Program will now loop." , "The program has looped " , i, "time(s)")
         print(" ")
         print(" ")
         print(" ")
@@ -235,3 +256,4 @@ except:
     print("There was an error in your code, perhaps you did not insert your input in the correct format?")
     
 
+# Thanks for browsing the code, feel free to raise issues.
